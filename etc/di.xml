@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+    <type name="Magento\Quote\Model\ShippingMethodManagement">
+        <plugin name="smallstripes_shipping_restrictions_shippingmethodmanagement"
+                type="SmallStripes\ShippingRestrictions\Plugin\ShippingMethodManagementPlugin" sortOrder="1"/>
+    </type>
+    <type name="Magento\Checkout\Model\GuestShippingInformationManagement">
+        <plugin name="smallstripes_shipping_restrictions_guestshippinginformationmanagement"
+                type="SmallStripes\ShippingRestrictions\Plugin\GuestShippingInformationManagementPlugin" sortOrder="2"/>
+    </type>
+    <type name="Magento\Checkout\Model\ShippingInformationManagement">
+        <plugin name="smallstripes_shipping_restrictions_shippinginformationmanagement"
+                type="SmallStripes\ShippingRestrictions\Plugin\ShippingInformationManagementPlugin" sortOrder="3"/>
+    </type>
+</config>
